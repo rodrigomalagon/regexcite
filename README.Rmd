@@ -36,14 +36,15 @@ The `str_split_one` function is built as a wrapper function around `stringr::str
 library(regexcite)
 ```
 
-1. Example with undesired input filtered
+1.  Example with undesired input filtered
+
 ```{r}
 x <- c('a','b','c','d')
-str_split_one(x)
+#str_split_one(x) will call an error
 ```
 
+2.  Basic example to split a link from the Maxar [Open Data program](https://www.maxar.com/open-data) to extract the date an image featuring a volcanic eruption area in Tonga was captured:
 
-2. Basic example to split a link from the Maxar [Open Data program](https://www.maxar.com/open-data) to extract the date an image featuring a volcanic eruption area in Tonga was captured:
 ```{r}
 (file_link <- 'https://maxar-opendata.s3.us-west-2.amazonaws.com/events/tonga-volcano21/ard/01/300222100210/2021-03-27/10300100BC131900-visual.tif')
 str_split_one(file_link,'/')[9]
