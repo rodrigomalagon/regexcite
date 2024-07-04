@@ -20,3 +20,6 @@ Imports:
 URL: https://github.com/rodrigomalagon/regexcite
 BugReports: https://github.com/rodrigomalagon/regexcite/issues
 VignetteBuilder: knitr
+Depends: 
+    R (>= 2.10)
+LazyData: true
