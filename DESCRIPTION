@@ -10,9 +10,13 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
 Suggests: 
-    testthat (>= 3.0.0)
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0),
+    stringi
 Config/testthat/edition: 3
 Imports: 
     stringr
 URL: https://github.com/rodrigomalagon/regexcite
 BugReports: https://github.com/rodrigomalagon/regexcite/issues
+VignetteBuilder: knitr
