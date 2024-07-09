@@ -83,7 +83,7 @@ We can apply this short process to the list of links within our file:
 
 ```{r}
 # Load dataset
-(path_to_file <- system.file('csv/emilia_romagna_urls.csv',package = 'regexcite'))
+path_to_file <- system.file('csv/emilia_romagna_urls.csv',package = 'regexcite')
 
 # Extract urls as character vector
 urls <- read.csv(path_to_file)[[1]]
@@ -93,6 +93,5 @@ lapply(urls,function(url){str_split_one(url,'/')[8]}) |> unlist() -> QUAD_key
 lapply(urls,function(url){str_split_one(url,'/')[9]}) |> unlist() -> dates
 
 # Construct dataframe
-df <- data.frame(date = dates,QUAD_key = QUAD_key,url = urls)
-head(df)
+(df <- data.frame(date = dates,QUAD_key = QUAD_key,url = urls))
 ```
