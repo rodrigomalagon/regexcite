@@ -83,7 +83,7 @@ We can apply this short process to the list of links within our file:
 
 ```{r}
 # Load dataset
-(path_to_file <- system.file('csv','emilia_romagna_urls.csv',package = 'regexcite'))
+(path_to_file <- system.file('csv/emilia_romagna_urls.csv',package = 'regexcite'))
 
 # Extract urls as character vector
 urls <- read.csv(path_to_file)[[1]]
